@@ -1,3 +1,5 @@
 // rootProject.name = 'SqlExercises'
 
 include 'HackerRank'
+include 'FreeCodeCampPostgreSQL'
+
