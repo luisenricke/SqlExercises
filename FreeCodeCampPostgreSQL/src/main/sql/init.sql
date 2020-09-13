@@ -70,3 +70,7 @@ SELECT
     AGE(NOW(), date_of_birth) AS age
 FROM person
 ORDER BY age DESC;
+
+-- Export data
+
+\copy (SELECT * FROM person LEFT JOIN car ON person.car_id = car.id) TO 'C:/Users/<user>/Projects/SqlExercises/FreeCodeCampPostgreSQL/src/main/sql/results.csv' DELIMITER ',' CSV HEADER;

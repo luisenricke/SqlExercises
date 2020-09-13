@@ -1,0 +1,4 @@
+id,first_name,last_name,gender,email,date_of_birth,country_of_birth,car_id,id,make,model,price
+2,Test,Test,Female,test2@test.com,1995-01-01,EUA,1,1,Land Rover,Sterling,87655.38
+1,Luis,Villalobos,Male,test@test.com,1995-04-24,Mexico,2,2,GMC,Acadia,17662.69
+3,Row,Row,Female,test4@test.com,1995-02-02,Canada,,,,,
