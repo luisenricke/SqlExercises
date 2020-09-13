@@ -50,3 +50,23 @@ SELECT COALESCE(null, null, 1) AS NUMBER
 
 SELECT COALESCE(email, 'empty email') FROM person;
 
+SELECT NOW()::DATE;
+
+SELECT NOW() - INTERVAL '1 YEAR';
+SELECT NOW() - INTERVAL '10 YEARS';
+SELECT NOW() - INTERVAL '10 MONTHS';
+SELECT NOW() - INTERVAL '10 DAYS';
+SELECT NOW() + INTERVAL '10 DAYS';
+SELECT (NOW() + INTERVAL '10 DAYS')::DATE; -- cast value
+
+SELECT EXTRACT(YEAR FROM NOW());
+SELECT EXTRACT(MONTH FROM NOW());
+SELECT EXTRACT(DAY FROM NOW());
+
+SELECT
+    first_name,
+    last_name,
+    country_of_birth,
+    AGE(NOW(), date_of_birth) AS age
+FROM person
+ORDER BY age DESC;
